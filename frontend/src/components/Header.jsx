@@ -23,6 +23,13 @@ const Header = () => {
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/#contact" },
   ];
+  const submenuLinks = {
+    "Furniture Solutions": "/service/furniture",
+    "Technology & IT": "/service/technology",
+    "Security Solutions": "/service/security",
+    "Digital Solutions": "/service/digital",
+    "Hospitality Solutions": "/service/hospitality",
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
@@ -50,17 +57,20 @@ const Header = () => {
                   {item.submenu && (
                     <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                       <div className="py-1">
-                        {item.submenu.map((subItem) => (
-                          <a
-                            key={subItem}
-                            href={`#${subItem
-                              .toLowerCase()
-                              .replace(/\s+/g, "-")}`}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                          >
-                            {subItem}
-                          </a>
-                        ))}
+                        {item.submenu.map((subItem) => {
+                          const href =
+                            submenuLinks[subItem] ||
+                            `#${subItem.toLowerCase().replace(/\s+/g, "-")}`;
+                          return (
+                            <a
+                              key={subItem}
+                              href={href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                            >
+                              {subItem}
+                            </a>
+                          );
+                        })}
                       </div>
                     </div>
                   )}

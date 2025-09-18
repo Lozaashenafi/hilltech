@@ -6,7 +6,6 @@ import AboutUs from "./pages/AboutUs";
 import Blog from "./pages/Blog";
 import Testimonials from "./pages/Testimonials";
 import FAQ from "./pages/FAQ";
-import Services from "./pages/Services";
 import Furniture from "./pages/Furniture";
 import Technology from "./pages/Technology";
 import Hospitality from "./pages/Hospitality";
@@ -24,14 +23,12 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/service" element={<Services />}>
-            <Route path="furniture" element={<Furniture />} />
-            <Route path="technology" element={<Technology />} />
-            <Route path="network" element={<Network />} />
-            <Route path="security" element={<Security />} />
-            <Route path="digital" element={<Digital />} />
-            <Route path="hospitality" element={<Hospitality />} />
-          </Route>
+          <Route path="/service/furniture" element={<Furniture />} />
+          <Route path="/service/technology" element={<Technology />} />
+          <Route path="/service/network" element={<Network />} />
+          <Route path="/service/security" element={<Security />} />
+          <Route path="/service/digital" element={<Digital />} />
+          <Route path="/service/hospitality" element={<Hospitality />} />
         </Route>
       </Routes>
     </>
