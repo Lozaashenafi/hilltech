@@ -18,7 +18,6 @@ const Header = () => {
         "Hospitality Solutions",
       ],
     },
-    { name: "Products", href: "/products" },
     { name: "About", href: "/#about" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/#contact" },
