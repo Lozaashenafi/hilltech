@@ -14,21 +14,21 @@ export default function FurniturePage() {
       description:
         "Height-adjustable desks designed for healthier and more dynamic workspaces.",
       image:
-        "https://images.unsplash.com/photo-1616628188506-fb6a2b4f78dc?auto=format&fit=crop&w=1000&q=80",
+        "https://yo-yodesk.co.uk/cdn/shop/collections/smart-desk.png?v=1755500197&width=2000",
     },
     {
       title: "Collaborative Meeting Table",
       description:
         "Beautifully crafted tables to encourage collaboration and creativity.",
       image:
-        "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1000&q=80",
+        "https://www.custom-conference-tables.com/wp-content/uploads/2025/01/U_Shape_Table_Heilman-Center_01-1-620x410.jpg",
     },
     {
       title: "Modern Lounge Sofa",
       description:
         "Relax in style with our contemporary lounge furniture for offices.",
       image:
-        "https://images.unsplash.com/photo-1549187774-b4e9b0445b06?auto=format&fit=crop&w=1000&q=80",
+        "https://images.stockcake.com/public/2/f/4/2f4c17d6-3ab5-4cce-8def-6a7e0a979a4f_large/modern-office-lounge-stockcake.jpg",
     },
   ];
 

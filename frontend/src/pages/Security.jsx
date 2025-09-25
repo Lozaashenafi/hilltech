@@ -7,28 +7,28 @@ export default function Security() {
       description:
         "High-definition smart cameras with remote access to keep your workplace secure.",
       image:
-        "https://images.unsplash.com/photo-1581091215367-59ab6b39c8a6?auto=format&fit=crop&w=1000&q=80",
+        "https://www.cctvsecuritypros.com/product_images/uploaded_images/high-end-security-camera.jpg",
     },
     {
       title: "Access Control Systems",
       description:
         "Smart card readers, biometric scanners, and secure entry systems for modern offices.",
       image:
-        "https://images.unsplash.com/photo-1581093588401-22c9d2a4e19a?auto=format&fit=crop&w=1000&q=80",
+        "https://journalistsresource.org/wp-content/uploads/2014/02/surveillance-camera-921x500.jpg",
     },
     {
       title: "Alarm & Intrusion Detection",
       description:
         "24/7 intrusion detection and alarm systems designed to protect your assets.",
       image:
-        "https://images.unsplash.com/photo-1581090466205-97ef0b572cd1?auto=format&fit=crop&w=1000&q=80",
+        "https://www.fourwallssecurity.com.au/hubfs/AdobeStock_43588414.jpeg",
     },
     {
       title: "Cybersecurity Solutions",
       description:
         "Protect your digital infrastructure from data breaches and cyber threats.",
       image:
-        "https://images.unsplash.com/photo-1591696331119-21b0f6c3c58e?auto=format&fit=crop&w=1000&q=80",
+        "https://atronicalarms.com/images/easyblog_articles/97/ATRALA_FebruaryBlog4_House-Camera-Installation-Omaha-NE_PHOTO.jpg",
     },
   ];
 

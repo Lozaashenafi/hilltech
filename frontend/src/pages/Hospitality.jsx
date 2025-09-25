@@ -21,7 +21,7 @@ export default function Hospitality() {
       description:
         "Equip event spaces with advanced AV systems, digital signage, and collaboration tools.",
       image:
-        "https://images.unsplash.com/photo-1503424886300-4bd7c5e4ec77?auto=format&fit=crop&w=1000&q=80",
+        "https://www.ems-events.co.uk/wp-content/uploads/2025/04/A-Step-by-step-Guide-to-Plan-Your-Av-Setup-for-a-Conference-Room.webp",
     },
     {
       title: "Guest Experience Platforms",

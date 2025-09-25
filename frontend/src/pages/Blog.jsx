@@ -1,35 +1,33 @@
 import { useState } from "react";
-import blog1 from "../assets/image/blog.avif";
-import blog2 from "../assets/image/blog.avif";
-import blog3 from "../assets/image/blog.avif";
-import blog4 from "../assets/image/blog.avif";
-import blog5 from "../assets/image/blog.avif";
-import blog6 from "../assets/image/blog.avif";
 
 const blogPosts = [
   {
     title: "Smart Office Furniture Trends in 2025",
     excerpt:
       "Explore the latest trends in smart office furniture and how technology is revolutionizing modern workplaces.",
-    image: blog1,
+    image:
+      "https://www.decorilla.com/online-decorating/wp-content/uploads/2024/09/Contemporary-workplace-design-trends-by-DECORILLA-1024x684.jpeg",
   },
   {
     title: "Integrating IT Systems for Seamless Workflow",
     excerpt:
       "Learn how integrating IT infrastructure can improve productivity, security, and collaboration in businesses.",
-    image: blog2,
+    image:
+      "https://integrio.net/static/894ff82d36f9a22ecfd088f9c9ff453e/Software-System-Integration-for-Enterprise-Businesses.png",
   },
   {
     title: "Digital Signage Solutions for Modern Hotels",
     excerpt:
       "Discover how hotels are leveraging digital signage to enhance guest experiences and streamline operations.",
-    image: blog3,
+    image:
+      "https://radix-int.com/wp-content/uploads/2025/04/freepik__modern-hotel-lobby-digital-signage-service-menu-on__56521.jpeg",
   },
   {
     title: "Advanced Security Systems for Office Buildings",
     excerpt:
       "A guide to modern security solutions including surveillance cameras, access control, and smart monitoring systems.",
-    image: blog3,
+    image:
+      "https://www.securitastechnology.com/sites/securitastechnology.com/files/media/2022-02/security%20camera%20installation.jpg",
   },
 ];
 

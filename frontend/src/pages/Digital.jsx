@@ -14,7 +14,7 @@ export default function Digital() {
       description:
         "Smart boards and touch-enabled displays designed for collaboration and presentations.",
       image:
-        "https://images.unsplash.com/photo-1596496050730-3b99f8c2e5b4?auto=format&fit=crop&w=1000&q=80",
+        "https://m.media-amazon.com/images/I/61WKdN0NLaL._UF1000,1000_QL80_.jpg",
     },
     {
       title: "Video Walls",
@@ -28,7 +28,7 @@ export default function Digital() {
       description:
         "Easily manage, schedule, and update your digital content across multiple screens and locations.",
       image:
-        "https://images.unsplash.com/photo-1581093580463-38aa7b81c7b1?auto=format&fit=crop&w=1000&q=80",
+        "https://www.yodeck.com/wp-content/uploads/2023/11/7-Steps-to-Effective-Content-Scheduling-Strategies_Blog-header.png",
     },
   ];
 

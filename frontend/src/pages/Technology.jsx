@@ -7,28 +7,28 @@ export default function Technology() {
       description:
         "Reliable and secure networking infrastructure to keep your business connected.",
       image:
-        "https://images.unsplash.com/photo-1581090700227-4c4f50b8d4f9?auto=format&fit=crop&w=1000&q=80",
+        "https://www.cisco.com/content/dam/cisco-cdc/site/images/legacy/assets/swa/img/anchor-info/what-is-network-infrastructure-info-628x353.jpg",
     },
     {
       title: "Cloud Computing",
       description:
         "Scale your business with secure and efficient cloud-based systems.",
       image:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80",
+        "https://www.polussolutions.com/wp-content/uploads/2024/06/Webpage-image-1.png",
     },
     {
       title: "Cybersecurity",
       description:
         "Protect your organization with advanced security solutions and monitoring systems.",
       image:
-        "https://images.unsplash.com/photo-1591696331119-21b0f6c3c58e?auto=format&fit=crop&w=1000&q=80",
+        "https://www.athreon.com/wp-content/uploads/2024/06/Digital-padlock-on-a-blue-circuit-board-symbolizing-data-security-and-cybersecurity-protection_695267203_060324-768x366.jpeg",
     },
     {
       title: "Software Development",
       description:
         "Custom software and IT systems tailored to meet your business needs.",
       image:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80",
+        "https://www.chlsoftech.com/images/UploadedImages/thumbs/0000153_custom-software-development.png",
     },
   ];
 
