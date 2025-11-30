@@ -2,8 +2,7 @@
 
 A modern, responsive website built with React for Hilltach Company, showcasing their services, products, and company information.
 
-![Hilltach Website Preview](/frontend/src/assets/image/hilltach-preview.png
-)
+![Hilltach Website Preview](./src/assets/images/hilltech-preview.png)
 
 ## 🚀 Features
 
