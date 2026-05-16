@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
 import { DoweitWidget } from "@doweit/voice";
 import { client } from "./doweit";
@@ -17,18 +17,12 @@ import Security from "./pages/Security";
 import Network from "./pages/Network";
 
 function App() {
-  const [ready, setReady] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation(); // Keeps track of where the user is
+  const location = useLocation();
 
   useEffect(() => {
-    // 1. Setup navigation so the AI can "push" the user to new pages
+    // Tell the AI how to navigate using React Router
     client.enableNavigation(navigate);
-
-    // 2. Initialize the AI
-    client.init().then(() => {
-      setReady(true);
-    });
   }, [navigate]);
 
   return (
@@ -50,15 +44,10 @@ function App() {
       </Routes>
 
       {/* 
-          This is your floating chat assistant. 
-          It will appear as a bubble in the bottom corner automatically.
+          Render the widget UNCONDITIONALLY. 
+          Do not use a "ready" state. The widget handles its own loading.
       */}
-      {ready && (
-        <DoweitWidget 
-          client={client} 
-          theme="light" // or "dark" to match your websight
-        />
-      )}
+      <DoweitWidget client={client} theme="light" />
     </>
   );
 }

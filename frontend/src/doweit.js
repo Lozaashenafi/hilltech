@@ -1,16 +1,15 @@
 import { DoweitClient } from "@doweit/voice";
 
 export const client = new DoweitClient({
-    publicKey: "sk_live_XXXXXXXXXXXXXXXXP40k",
+    // ⚠️ CHANGE THIS to your key that starts with "dw_pub_"
+    publicKey: "dw_pub_7bca4c9f1343abb0975c47742196e417e0a090dd1b55b7b5",
 });
 
 client.register({
-    // Tool 1: Tell user about company
     getCompanySummary: {
         description: "Explains what HillTech does.",
         handler: () => "HillTech specializes in 3 sectors: specialized furniture, enterprise technology solutions, and digital security."
     },
-    // Tool 2: Check availability (Example of a 'Smart' agent)
     checkServiceAvailability: {
         description: "Checks if a specific service is available in a region.",
         params: { service: { type: "string" }, region: { type: "string" } },
@@ -20,7 +19,6 @@ client.register({
     }
 });
 
-// Sync current location so AI knows where the user is
 client.bindState(() => ({
     currentPath: window.location.pathname,
     isLoggedIn: false 
