@@ -1,1 +1,18 @@
 @import "tailwindcss";
+/* This stretches the widget to look like a professional sidebar */
+.doweit-widget-root [role="dialog"] {
+    position: fixed !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100vh !important; /* Full screen height */
+    width: 400px !important;  /* Wider sidebar feel */
+    border-radius: 0 !important; /* Sharp corners like a sidebar */
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1) !important;
+}
+
+/* Adjust the bubble button position if needed */
+.doweit-widget-button {
+    bottom: 20px !important;
+    right: 20px !important;
+}
