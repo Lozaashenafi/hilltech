@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import { DoweitWidget } from "@doweit/voice";
-import { client } from "./doweit";
+import { client, setNavigator } from "./doweit";
 
 import RootLayout from "./layout/RootLayout";
 import Home from "./pages/Home";
@@ -15,14 +15,15 @@ import Hospitality from "./pages/Hospitality";
 import Digital from "./pages/Digital";
 import Security from "./pages/Security";
 import Network from "./pages/Network";
+import Contact from "./components/Contact";
 
 function App() {
   const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
-    // Tell the AI how to navigate using React Router
-    client.enableNavigation(navigate);
+    // Hand React Router's navigate() to the Doweit actions so the assistant
+    // does true client-side navigation (no full page reload).
+    setNavigator(navigate);
   }, [navigate]);
 
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/service/furniture" element={<Furniture />} />
           <Route path="/service/technology" element={<Technology />} />
           <Route path="/service/network" element={<Network />} />
@@ -43,11 +45,11 @@ function App() {
         </Route>
       </Routes>
 
-      {/* 
-          Render the widget UNCONDITIONALLY. 
+      {/*
+          Render the widget UNCONDITIONALLY.
           Do not use a "ready" state. The widget handles its own loading.
       */}
-      <DoweitWidget client={client} theme="light" />
+      <DoweitWidget client={client} />
     </>
   );
 }

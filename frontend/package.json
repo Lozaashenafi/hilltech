@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@doweit/voice": "^0.1.6",
+    "@doweit/voice": "^0.1.8",
     "@tailwindcss/vite": "^4.1.13",
     "framer-motion": "^12.23.15",
     "lucide-react": "^0.544.0",
