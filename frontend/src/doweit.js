@@ -9,7 +9,7 @@ const DOWEIT_BACKEND_URL = "https://doweit-voice.onrender.com";
 
 // The Doweit Voice client. The publishable key comes from the Doweit dashboard.
 export const client = new DoweitClient({
-    publicKey: "dw_pub_84653972211e383be1868845d8298a0bbbf0073393d8a82b",
+    publicKey: "dw_pub_ef995690047cbc54df55d0ae5db1ed4e15cadf5f3ee1ef60",
     baseUrl: DOWEIT_BACKEND_URL,
 });
 
